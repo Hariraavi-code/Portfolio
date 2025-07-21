@@ -40,7 +40,7 @@ Portfolio/
 
 ##  Contact
 
-Created by [tejaraavi769@gmail.com](mailto:tejaraavi769@gmail.com)  
+Created by [Hari Charan Teja](mailto:tejaraavi769@gmail.com)[tejaraavi769@gmail.com]
 To connect with me for internships, collaborations, or opportunities.
 
 
