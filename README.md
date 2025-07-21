@@ -40,7 +40,7 @@ Portfolio/
 
 ##  Contact
 Created by **Hari Charan Teja**  
-📧 Email: [tejaraavi769@gmail.com](mailto:tejaraavi769@gmail.com)
-To connect with me for internships, collaborations, or opportunities.
+ Email: [tejaraavi769@gmail.com](mailto:tejaraavi769@gmail.com)
+to connect with me for internships, collaborations, or opportunities.
 
 
