@@ -37,15 +37,6 @@ Portfolio/
 
 - HTML5
 - CSS3
-- [Boxicons](https://boxicons.com/)
-- Google Fonts
-
-
-
-
-
-
----
 
 ##  Contact
 
