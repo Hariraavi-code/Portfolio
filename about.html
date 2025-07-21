@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Hari Charan Teja</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #1f242d;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Animation */
+    @keyframes show-content {
+      to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    .bars-animation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: -1;
+    }
+
+    .bars-animation .bar {
+      width: 100%;
+      height: 100%;
+      background: #1f242d;
+      transform: translateY(-100%);
+      animation: show-bars 0.5s ease-in-out forwards;
+      animation-delay: calc(0.1s * var(--i));
+    }
+
+    @keyframes show-bars {
+      to {
+        transform: translateY(0%);
+      }
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background: #1f242d;
+    }
+
+    .navbar .logo {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .navbar ul {
+      display: flex;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      margin-left: 35px;
+    }
+
+    .navbar ul li a {
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      transition: 0.5s;
+    }
+
+    .navbar ul li:hover a,
+    .navbar ul li.active a {
+      color: #7cf03d;
+    }
+
+    /* About Section */
+    .about-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 150px;
+      padding-bottom: 50px;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(30px);
+      animation: show-content 1s ease forwards;
+      animation-delay: 1.0s;
+    }
+
+    .about-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: 3px solid #7cf03d;
+      box-shadow: 0 0 20px #7cf03d;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .about-page h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .about-page p {
+      font-size: 16px;
+      max-width: 700px;
+      line-height: 1.6;
+      margin: 20px auto;
+    }
+
+    .btn-sci {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:  15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 30px;
+      background: #7cf03d;
+      border: 2px solid #7cf03d;
+      border-radius: 40px;
+      box-shadow: 0 0 10px #7cf03d;
+      font-size: 16px;
+      color: #1f242d;
+      font-weight: 600;
+      transition: 0.5s;
+    }
+
+    .btn:hover {
+      background: transparent;
+      color: #7cf03d;
+      box-shadow: none;
+    }
+
+    .sci {
+      display: flex;
+      gap: 20px;
+    }
+
+    .sci a {
+      font-size: 30px; /* Increased logo size */
+      padding: 10px;
+      border: 2px solid #7cf03d;
+      border-radius: 40%;
+      color: #7cf03d;
+      transition: 0.3s ease;
+    }
+
+    .sci a:hover {
+      background: #7cf03d;
+      color: #1f242d;
+      box-shadow: 0 0 10px #7cf03d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+
+  <!-- About Content -->
+  <section class="about-page">
+    <div class="about-img">
+      <img src="home3.jpg" alt="About Image">
+    </div>
+    <h1 style="color: #7cf03d;">Who am I?</h1>
+
+    <p>
+        Hey, I'm Hari, an undergraduate student pursuing B.Tech in Materials Science and Engineering. I'm deeply passionate about both the world of materials and the world of technology.
+        I enjoy coding and have hands-on experience with <strong>C and Python</strong>, which I've used to build problem-solving logic.
+        I also have a great interest in <strong>web development</strong>, creating clean and responsive user interfaces using <strong>HTML, CSS, and JavaScript</strong>.
+
+        With a strong foundation in technical concepts and a constant drive to learn, I'm always looking for opportunities to apply my skills through real-world projects, internships, or collaborations.
+       
+        Whether it’s in a lab or behind a screen, I love bringing ideas to life.
+    </p>
+
+    <div class="btn-sci">
+      <a href="contact.html" class="btn">Contact Me</a>
+      <div class="sci">
+        <a href="https://github.com/Hariraavi-code"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/hari-charan-teja-raavi-463576288/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/hari__raavi" target="_blank"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

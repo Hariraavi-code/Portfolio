@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hari Charan Teja</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #1f242d;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-section {
+      padding: 120px 9% 50px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact-section h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      color: #7cf03d;
+    }
+
+    .contact-info {
+      background-color: #2a2f3d;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(124, 240, 61, 0.3);
+      max-width: 600px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 10px;
+      color: #7cf03d;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .contact-info a {
+      color: #7cf03d;
+      text-decoration: none;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      font-size: 30px;
+      color: #7cf03d;
+      border: 2px solid #7cf03d;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: #7cf03d;
+      color: #1f242d;
+      box-shadow: 0 0 10px #7cf03d;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background: #1f242d;
+    }
+
+    .navbar .logo {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .navbar ul {
+      display: flex;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      margin-left: 35px;
+    }
+
+    .navbar ul li a {
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .navbar ul li:hover a,
+    .navbar ul li.active a {
+      color: #7cf03d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+
+    <div class="contact-info">
+      <h3>Let's Connect</h3>
+      <p>Email: <a href="mailto:tejaraavi769@gmail.com">tejaraavi769@gmail.com</a></p>
+      <p>Mobile Number: <a href="tel:9346276799">9346276799</a></p>
+
+      <div class="social-links">
+        <a href="https://github.com/Hariraavi-code" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/hari-charan-teja-raavi-463576288/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="mailto:tejaraavi769@gmail"><i class='bx bx-envelope'></i></a>
+        <a href="https://www.instagram.com/hari__raavi" target="_blank"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

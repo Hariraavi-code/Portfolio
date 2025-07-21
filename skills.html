@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Hari Charan Teja</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1f242d;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .skills-section {
+      padding: 150px 9% 50px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .skills-section h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      color: #7cf03d;
+      text-align: left;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .skill-item {
+      background: #2a2f3b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(124, 240, 61, 0.2);
+    }
+
+    .skill-item h3 {
+      color: #7cf03d;
+      margin-bottom: 10px;
+    }
+
+    .skill-item ul {
+      padding-left: 20px;
+    }
+
+    .skill-item ul li {
+      line-height: 1.7;
+    }
+
+    .navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background: #1f242d;
+    }
+
+    .navbar .logo {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .navbar ul {
+      display: flex;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      margin-left: 35px;
+    }
+
+    .navbar ul li a {
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .navbar ul li:hover a,
+    .navbar ul li.active a {
+      color: #7cf03d;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="active"><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="skills-section">
+    <h1>My Skills</h1>
+
+    <div class="skill-list">
+      <div class="skill-item">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-item">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          
+        </ul>
+      </div>
+
+      <div class="skill-item">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>OVITO</li>
+          <li>Image.J</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
